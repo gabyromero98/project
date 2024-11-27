@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trippy | Gabriela Romero 2024</title>
+	<link rel="stylesheet" href="https://use.typekit.net/rbq3dco.css">
+<style type="text/css">
+body {
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-image: url(roques.jpeg);
+	background-position: center 25%;
+}
+header {
+    height: 150px;
+    background-color: rgba(0,0,0,0.62);
+}
+wrapper {
+    width: 1200px;
+    margin: auto;
+    display: block;
+   }
+footer {
+    background-color: rgba(131,174,154,0.77);
+   color: #000000;
+    margin-top: auto
+    text-align: center;
+	padding:20px;
+	font-size:12px;
+	font-family:sans-serif;
+}
+#Tabs1 ul li img {
+    height: 50px;
+    margin: 8px;
+    width: auto;
+}
+#Tabs1 ul {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+}
+	
+#Tabs1 {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    margin-top: 65px;
+}
+
+#Tabs1 ul li {
+    padding: 8px;
+    text-align: center;
+}
+.flying-date {
+    display: inline-block;
+    padding-right: 117px;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    background-color: rgba(143,235,250,0.65);
+}
+#Tabs1 input, select {
+    border-radius: 16px;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    height: 2.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+	.people{
+    display: inline-block;
+    margin-right: 187px;
+	}
+	
+.submit {
+    background-color: rgba(91,198,251,1.00);
+    width: 20px;
+}
+#tabs-1 .flying .submit {
+    width: 170px;
+    text-align: center;
+    margin-left: 488px;
+}
+
+#Tabs1 #tabs-2 .date-car {
+    display: inline-block;
+	 padding-right: 117px;
+}
+	
+
+#tabs-1 .flying .submit1 {
+    width: 190px;
+    margin-left: 466px;
+    margin-top: 14px;
+    background-color: rgba(109,187,244,1.00);
+    font-weight: bolder;
+}
+#Tabs1 #tabs-2 .submit2 {
+	 width: 190px;
+    margin-left: 466px;
+    margin-top: 14px;
+    background-color: rgba(109,187,244,1.00);
+    font-weight: bolder;
+	}
+#Tabs1 #tabs-3 .date-hotel {
+    display: inline-block;
+	 padding-right: 117px;
+}
+#Tabs1 #tabs-3 .submit3 {
+		 width: 190px;
+    margin-left: 466px;
+    margin-top: 14px;
+    background-color: rgba(109,187,244,1.00);
+    font-weight: bolder;
+}
+#Tabs1 #tabs-4 .submit4 {
+	width: 190px;
+    margin-left: 466px;
+    margin-top: 14px;
+    background-color: rgba(109,187,244,1.00);
+    font-weight: bolder;
+}
+#Tabs1 #tabs-5 .submit4 {
+	width: 190px;
+    margin-left: 466px;
+    margin-top: 14px;
+    background-color: rgba(109,187,244,1.00);
+    font-weight: bolder;
+}
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 67px;
+    margin-bottom: 74px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}	
+	.logo{
+    padding-top: 21px;
+    margin-top: -60px;
+    margin-left: 584px;
+	}
+	p{
+		font-family: "ohno-softie-variable", sans-serif;
+font-variation-settings: "wght" 300;
+	}
+	section{font-family: "ohno-softie-variable", sans-serif;
+font-variation-settings: "wght" 300;}
+	
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="trippy.png" class="logo" width="250" height="250
+	" alt=""/></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><img src="plane.png" alt="" width="521" height="263"><br>
+      <a href="#tabs-1">Flights</a></li>
+      <li><img src="car.png" alt="" width="480" height="361"><br>
+      <a href="#tabs-2">Cars</a></li>
+      <li><img src="hotel.png" alt="" width="582" height="582"><br>
+      <a href="#tabs-3">Hotels</a></li>
+	  <li><img src="cruise.png" alt="" width="446" height="480"><br>
+      <a href="#tabs-4">Cruises</a></li>
+	  <li><img src="to-do.png" alt="" width="544" height="473"><br>
+      <a href="#tabs-5">Things to do</a></li>
+    </ul>
+    <div id="tabs-1">
+		<section class="flying"><p class="Flying-from-text">FLYING FROM</p>
+      <p><input type="text" placeholder="City or Airport" size="30px"></p>
+		</section>
+	  <section class="flying">
+		<p class="flying-to-text"> FLYING TO</p>
+			<p><input type="text" placeholder="City or Airport" size="30px"></p>
+		<section class="flying-date">
+			<p>DEPARTING</p>
+			<p><input type="date"></p>
+	    </section>
+		<section class="flying-date">
+		  <p>RETURNING</p>
+			<p><input type="date"></p>
+	    </section>
+			<br>
+			  <section class="people">
+				  <p>ADULTS(18+)</p>
+				<select>
+				  <option>Adults</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+			</section>
+			<section class="people">
+			<p>CHILDREN(0-17)</p>
+				<select>
+				  <option>Children</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+			</section>
+			<br>
+		  <input type="submit" class="submit1" value="Find Your Flight">
+				
+</section>
+    </div>
+    <div id="tabs-2">
+	  <p>PICKING UP</p>
+      <input type="email" placeholder="City or Airport" size="30px">
+	<br>
+	<p>DROPPING OFF</p>
+	<input type="text" placeholder="City or Airport" size="30px">
+	<br>
+	<section class="date-car">
+	<p>PICK-UP</p>
+	<input type="date">
+	  </section>
+		<section class="date-car">
+	<p>DROP-OFF</p>
+	<input type="date">
+	</section>
+		<br>
+		<input type="submit" class="submit2" value="Search">
+    </div>
+    <div id="tabs-3">
+      <p>DESTINATION</p>
+		<input type="text" placeholder="Where to?" size="30px">
+		<br>
+		<section class="date-hotel">
+		<p>CHECK-IN</p>
+		<input type="date">
+	  </section>
+		<section class="date-hotel">
+		<p>CHECK-OUT</p>
+		<input type="date">
+		</section>
+		<br>
+		<section class="people">
+				  <p>ADULTS(18+)</p>
+				<select>
+				  <option>Adults</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+	  </section>
+			<section class="people">
+			<p>CHILDREN(0-17)</p>
+				<select>
+				  <option>Children</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+		</section>
+				<section class="people">
+			<p>ROOMS</p>
+				<select>
+				  <option>Rooms</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+			</section>
+		<br>
+		<input type="submit" class="submit3" value="Search">
+    </div>
+	  <div id="tabs-4">
+      <p>DESTINATION</p>
+		 <input type="text" placeholder="Where To?" size="30px">
+		  <br>
+		  <p>DEPARTURE</p>
+		  <input type="date">
+		  <br>
+		  <section class="people">
+				  <p>ADULTS(18+)</p>
+				<select>
+				  <option>Adults</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+		</section>
+			<section class="people">
+			<p>CHILDREN(0-17)</p>
+				<select>
+				  <option>Children</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+		</section>
+				<section class="people">
+			<p>ROOMS</p>
+				<select>
+				  <option>Rooms</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5+</option>
+				</select>
+			</section>
+		  <br>
+		  <input class="submit4" type="submit">
+    </div>
+	  <div id="tabs-5">
+      <p>ACTIVITIES</p>
+		 <input type="text" placeholder="What City?" size="20px">
+		  <p>DATE</p>
+		  <input type="date">
+		  <input class="submit4" type="submit">
+    </div>
+  </div>
+	<br>
+	<section id="images">
+	<div class="scroll-container">
+  <img src="one.jpg" alt="beach">
+  <img src="two.jpg" alt="church">
+  <img src="three.jpg" alt="mountains">
+  <img src="four.jpg" alt="beach2">
+<img src="five.jpg" alt="pool">
+</div>
+  </section>
+</wrapper>
+<footer><p>© 2024, Gabriela Romero. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
